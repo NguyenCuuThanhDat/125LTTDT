@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @author Admin
  */
 public class CongNhan extends CanBo {
-    private String bac;
+    private String bac210;
     
     public CongNhan(){
         
@@ -21,16 +21,16 @@ public class CongNhan extends CanBo {
 
     public CongNhan(String bac, String hoten, Date ngaysinh, String gioitinh, String diachi) {
         super(hoten, ngaysinh, gioitinh, diachi);
-        this.bac = bac;
+        this.bac210 = bac;
     }
     
     public void NhapThongTin(Scanner sc) throws ParseException{
         super.NhapThongTin(sc);
         System.out.print("\n Bac  :");
-        bac = sc.nextLine();
+        bac210 = sc.nextLine();
     }
     public void HienThiThongTin(){
         super.HienThiThongTin();
-        System.out.print("\n\t Bac :"+ bac);
+        System.out.print("\n\t Bac :"+ bac210);
     }
 }

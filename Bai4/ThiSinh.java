@@ -9,44 +9,44 @@ import java.util.Scanner;
  * @author Admin
  */
 public class ThiSinh {
-    private int sobaodanh;
-    private String hoten;
-    private String diachi ;
-    private String dienUuTienKV;
+    private int sobaodanh210;
+    private String hoten210;
+    private String diachi210 ;
+    private String dienUuTienKV210;
     
     public ThiSinh(){
         
     }
 
     public ThiSinh(int sobaodanh, String hoten, String diachi, String dienUuTienKV) {
-        this.sobaodanh = sobaodanh;
-        this.hoten = hoten;
-        this.diachi = diachi;
-        this.dienUuTienKV = dienUuTienKV;
+        this.sobaodanh210 = sobaodanh;
+        this.hoten210 = hoten;
+        this.diachi210 = diachi;
+        this.dienUuTienKV210 = dienUuTienKV;
     }
     
     public void NhapThongTin(Scanner sc){
         System.out.print("\n Nhap so bao danh :");
-        sobaodanh= sc.nextInt();
+        sobaodanh210= sc.nextInt();
         System.out.print("\n Nhap ho ten :");
-        hoten= sc.nextLine();
+        hoten210= sc.nextLine();
         
         System.out.print("\n Nhap dia chi :");
-        diachi= sc.nextLine();
+        diachi210= sc.nextLine();
         
         System.out.print("\n Nhap dien uu tien khu vuc nao :");
-        dienUuTienKV= sc.nextLine();
+        dienUuTienKV210= sc.nextLine();
         
     }
     
     public void HienThiThongTin(){
-        System.out.print("\nSo bao danh : " + sobaodanh);
-        System.out.print("\nHo ten: " + hoten);
-        System.out.print("\nDia chi : " + diachi);
-        System.out.print("\nDien uu tien thuoc khu vuc : " + dienUuTienKV);
+        System.out.print("\nSo bao danh : " + sobaodanh210);
+        System.out.print("\nHo ten: " + hoten210);
+        System.out.print("\nDia chi : " + diachi210);
+        System.out.print("\nDien uu tien thuoc khu vuc : " + dienUuTienKV210);
     }
     
     public int getThiSinh(){
-        return sobaodanh;
+        return sobaodanh210;
     }
 }

@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @author Admin
  */
 public class NhanVien extends CanBo {
-    private String congviec;
+    private String congviec210;
     
     public NhanVien() {
         
@@ -21,18 +21,18 @@ public class NhanVien extends CanBo {
 
     public NhanVien(String congviec, String hoten, Date ngaysinh, String gioitinh, String diachi) {
         super(hoten, ngaysinh, gioitinh, diachi);
-        this.congviec = congviec;
+        this.congviec210 = congviec;
     }
     
     public void NhapThongTin(Scanner sc ) throws ParseException{
         super.NhapThongTin(sc);
         System.out.print("\n Nhap cong viec :");
-        congviec = sc.nextLine();
+        congviec210 = sc.nextLine();
     }
     
     public void HienThiThpngTin(){
         super.HienThiThongTin();
-        System.out.print("\n Cong viec :" + congviec);
+        System.out.print("\n Cong viec :" + congviec210);
     }
     
     

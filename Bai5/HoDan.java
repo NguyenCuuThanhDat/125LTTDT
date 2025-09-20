@@ -13,54 +13,54 @@ import java.util.*;
  */
 public class HoDan extends Nguoi {
     
-    private int songuoi;
-    private int sonha;
-    private Nguoi[] list;
+    private int songuoi210;
+    private int sonha210;
+    private Nguoi[] list210;
     
     public HoDan(){
-        list= new Nguoi[10];
+        list210= new Nguoi[10];
     }
 
     
 
     public HoDan(int songuoi, int sonha,  String hoten, Date ngaysinh, String nghenghiep) {
         super(hoten, ngaysinh, nghenghiep);
-        this.songuoi = songuoi;
-        this.sonha = sonha;
+        this.songuoi210 = songuoi;
+        this.sonha210 = sonha;
       
     }
     
     public void NhapThongTin(Scanner sc) throws ParseException {
         
         System.out.println("\nNhap so nguoi :");
-        this.songuoi=sc.nextInt();
+        this.songuoi210=sc.nextInt();
         sc.nextLine();
         System.out.println("\nNhap so nha :");
-        sonha=sc.nextInt();
+        sonha210=sc.nextInt();
         sc.nextLine();
         System.out.println("\nNhap thong tin tung nguoi trong ho :");
-        for(int i = 0 ; i< songuoi; i ++){
+        for(int i = 0 ; i< songuoi210; i ++){
             System.out.println("\nNguoi thu " + (i+1) + " la :");
-            list[i]=new Nguoi();
-            list[i].NhapThongTin(sc);
+            list210[i]=new Nguoi();
+            list210[i].NhapThongTin(sc);
         }
     }
     public void HienThiThongTin(){
         //super.HienThiThongTin();
-        System.out.println("\nSo nguoi : "+songuoi);
-        System.out.println("\nSo nha : "+sonha);
+        System.out.println("\nSo nguoi : "+songuoi210);
+        System.out.println("\nSo nha : "+sonha210);
         System.out.println("\nThong tin cua tung nguoi trong gia dinh :");
-        for(int i =0 ; i<songuoi; i++){
+        for(int i =0 ; i<songuoi210; i++){
             System.out.println("\nNguoi thu :"+ (i+1) + " la : ");
-            list[i].HienThiThongTin();
+            list210[i].HienThiThongTin();
         }
     }
     public Nguoi[] getList(){
-        return list;
+        return list210;
     }
     
     public int getSoNguoi(){
-        return songuoi;
+        return songuoi210;
     }
     
 }

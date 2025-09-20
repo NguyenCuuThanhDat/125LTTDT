@@ -11,34 +11,34 @@ import java.util.Scanner;
  * @author Admin
  */
 public class PhanSo {
-    private int tuSo ;
-    private int mauSo;
+    private int tuSo210 ;
+    private int mauSo210;
 
     public PhanSo() {
-    this.tuSo = 0;
-    this.mauSo = 1; 
+    this.tuSo210 = 0;
+    this.mauSo210 = 1; 
 }
 
     public int getTuSo() {
-        return tuSo;
+        return tuSo210;
     }
 
     public void setTuSo(int tuSo) {
-        this.tuSo = tuSo;
+        this.tuSo210 = tuSo;
     }
 
     public int getMauSo() {
-        return mauSo;
+        return mauSo210;
     }
 
     public void setMauSo(int mauSo) {
-        this.mauSo = mauSo;
+        this.mauSo210 = mauSo;
     }
     
 
     public PhanSo(int tuSo, int mauSo) {
-        this.tuSo = tuSo;
-        this.mauSo = mauSo;
+        this.tuSo210 = tuSo;
+        this.mauSo210 = mauSo;
     }
     
      public void NhapPhanSo(Scanner sc){
@@ -54,45 +54,45 @@ public class PhanSo {
              
          }else
          {
-             this.tuSo=a;
-             this.mauSo=b;
+             this.tuSo210=a;
+             this.mauSo210=b;
              
          }
          }while(b==0);
      }
      public void hienThiPS(){
-         if(mauSo*tuSo <0){
-             System.out.println("\t -"+Math.abs(tuSo)+"/"+Math.abs(mauSo));
+         if(mauSo210*tuSo210 <0){
+             System.out.println("\t -"+Math.abs(tuSo210)+"/"+Math.abs(mauSo210));
          }else
          {
-             System.out.println("\t "+Math.abs(tuSo)+"/"+Math.abs(mauSo));
+             System.out.println("\t "+Math.abs(tuSo210)+"/"+Math.abs(mauSo210));
          }
      }
      
      public PhanSo congPS(PhanSo ps2){
-         int a = tuSo*ps2.mauSo+ps2.tuSo*mauSo;
-         int b = mauSo*ps2.mauSo;
+         int a = tuSo210*ps2.mauSo210+ps2.tuSo210*mauSo210;
+         int b = mauSo210*ps2.mauSo210;
          
          return new PhanSo(a,b);
      }
      
      public PhanSo truPS(PhanSo ps2){
-         int a = tuSo*ps2.mauSo-ps2.tuSo*mauSo;
-         int b = mauSo*ps2.mauSo;
+         int a = tuSo210*ps2.mauSo210-ps2.tuSo210*mauSo210;
+         int b = mauSo210*ps2.mauSo210;
          
          return new PhanSo(a,b);
      }
      
      public PhanSo nhanPS(PhanSo ps2){
-         int a = tuSo*ps2.tuSo;
-         int b = mauSo*ps2.mauSo;
+         int a = tuSo210*ps2.tuSo210;
+         int b = mauSo210*ps2.mauSo210;
          
          return new PhanSo(a,b);
      }
      
      public PhanSo chiaPS(PhanSo ps2){
-         int a = tuSo*ps2.mauSo;
-         int b = mauSo*ps2.tuSo;
+         int a = tuSo210*ps2.mauSo210;
+         int b = mauSo210*ps2.tuSo210;
          
          return new PhanSo(a,b);
      }
@@ -110,15 +110,15 @@ public class PhanSo {
      }
      
      public boolean kiemTraPSTG(){
-         if(UCLN(tuSo,mauSo)==1){
+         if(UCLN(tuSo210,mauSo210)==1){
              return true;
          }else
              return false;
      }
      
      public void toiGianPS(){
-         int x= UCLN(tuSo, mauSo);
-         tuSo/=x;
-         mauSo/=x;
+         int x= UCLN(tuSo210, mauSo210);
+         tuSo210/=x;
+         mauSo210/=x;
      }
 }

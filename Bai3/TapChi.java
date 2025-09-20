@@ -10,8 +10,8 @@ import java.util.*;
  * @author Admin
  */
 public class TapChi extends TaiLieu {
-    private int sophathanh;
-    private int thangphathanh;
+    private int sophathanh210;
+    private int thangphathanh210;
     
     public TapChi(){
         
@@ -19,21 +19,21 @@ public class TapChi extends TaiLieu {
 
     public TapChi(int sophathanh, int thangphathanh, String matailieu, String tennhaxb, int sobanphathanh) {
         super(matailieu, tennhaxb, sobanphathanh);
-        this.sophathanh = sophathanh;
-        this.thangphathanh = thangphathanh;
+        this.sophathanh210 = sophathanh;
+        this.thangphathanh210 = thangphathanh;
     }
     
     public void NhapThongTin(Scanner sc){
         super.NhapThongTin(sc);
         System.out.print("\nNhap so phat hanh :");
-        sophathanh = sc.nextInt();
+        sophathanh210 = sc.nextInt();
         System.out.print("\nNhap thang phat hanh :");
-        thangphathanh = sc.nextInt();
+        thangphathanh210 = sc.nextInt();
         sc.nextLine();
     }
     public void HienThiThongTin(){
         super.HienThiThongTin();
-        System.out.print("\nSo phat hanh:"+ sophathanh);
-        System.out.print("\nThang phat hanh:"+ thangphathanh);
+        System.out.print("\nSo phat hanh:"+ sophathanh210);
+        System.out.print("\nThang phat hanh:"+ thangphathanh210);
     }
 }

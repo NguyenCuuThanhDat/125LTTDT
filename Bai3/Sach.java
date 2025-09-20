@@ -9,8 +9,8 @@ import java.util.*;
  * @author Admin
  */
 public class Sach extends TaiLieu {
-    private String tentg;
-    private int sotrang;
+    private String tentg210;
+    private int sotrang210;
     
     public Sach(){
         
@@ -19,23 +19,23 @@ public class Sach extends TaiLieu {
 
     public Sach(String tentg, int sotrang, String matailieu, String tennhaxb, int sobanphathanh) {
         super(matailieu, tennhaxb, sobanphathanh);
-        this.tentg = tentg;
-        this.sotrang = sotrang;
+        this.tentg210 = tentg;
+        this.sotrang210 = sotrang;
     }
     
     public void NhapThongTin(Scanner sc){
         super.NhapThongTin(sc);
         System.out.print("\n Nhap ten tac gia:");
-        tentg= sc.nextLine();
+        tentg210= sc.nextLine();
         System.out.print("\n Nhap so trang:");
-        sotrang= sc.nextInt();
+        sotrang210= sc.nextInt();
         sc.nextLine();
     }
     
     public void HienThiThongTin(){
         super.HienThiThongTin();
-        System.out.print("\n Ten tac gia:" + tentg);
-        System.out.print("\n So trang:" + sotrang);
+        System.out.print("\n Ten tac gia:" + tentg210);
+        System.out.print("\n So trang:" + sotrang210);
         
     }
     
